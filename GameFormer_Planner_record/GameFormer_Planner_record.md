@@ -45,3 +45,16 @@ python run_nuplan_test.py \
 --map_path nuplan/dataset/maps \
 --model_path training_log/your/model
 ```
+
+### 4、可视化
+这一块主要是针对于测试后产生的结果可视化，因为每一次测试都需要花费大量时间
+```shell
+# 需要更改文档内以下参数：
+## 前两个可以在testing_log下查到：
+### experiment_name = 'open_loop_boxes'
+### experiment_time = '2024-03-06 15:40:29.079113'
+## 后两个取决于nuplan数据集位置：
+### data_root = '/data/datasets/nuplan/splits/mini'
+### map_root = '/data/datasets/nuplan/maps'
+python run_nuboard.py
+```
