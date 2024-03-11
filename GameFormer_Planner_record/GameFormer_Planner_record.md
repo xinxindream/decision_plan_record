@@ -12,6 +12,7 @@ conda activate nuplan
 pip install -r requirements.txt
 
 # 激活环境变量
+# 可以自己设定路径，也可以在nuplan下创建一个新的exp文件夹
 export NUPLAN_EXP_ROOT="$HOME/nuplan/exp"
 ```
 
