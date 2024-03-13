@@ -14,6 +14,9 @@
 2. 激活虚拟环境
 > conda activate env_name
 
+3. 查看当前虚拟环境下的依赖
+> conda list
+
 ## 二、Cuda相关
 ### 1、显卡信息
 1. 瞬时显卡信息
@@ -27,3 +30,15 @@
 ![nvidia列表信息解读图片](nvidia_smi.png "nvidia_info")
 
 ## 三、shell相关
+## 四、pycharm相关
+### 4.1 python运行需要添加参数
+```
+右上角工具栏 -> edit configurations -> 对应项目 -> parameters
+```
+
+### 4.2 断点调试
+```
+F9: 跳到下一个断点
+F8: step over, 运行该语句，不进入函数体
+F7: step into, 运行该语句，进入函数体
+```
