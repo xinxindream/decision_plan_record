@@ -5,10 +5,10 @@
 xiaoba_rosbag_tonuplan_likenuplan.py
 
 # 训练
-
+train_predictor.py
 
 # 测试
-
+run_nuplan_test.py
 ```
 
 ## 二、操作流程
@@ -28,5 +28,8 @@ xiaoba_rosbag_tonuplan_likenuplan.py
 # valid
 /data/datasets/xiaoba/2024.1.11/2024-01-11-17-20-37_part2_with_det_2_train/valid/
 ```
+
+4. 数据分析
+dim=2, 特征为50, 符合GameFormerPlanner源码
 
 ### 2、训练模型
