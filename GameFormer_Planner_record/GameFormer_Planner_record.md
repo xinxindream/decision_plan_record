@@ -24,6 +24,10 @@ python data_process.py \
 --data_path nuplan/dataset/nuplan-v1.1/splits/mini \
 --map_path nuplan/dataset/maps \
 --save_path nuplan/processed_data
+
+# 分割训练集和测试集（9：1）
+# 官方在数据处理代码中并没有直接分割，所以需要我们自己编写脚本进行区分
+# TODO: 分割数据集脚本
 ```
 
 ### 2、训练
