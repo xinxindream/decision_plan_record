@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+# 数据处理
+##
+=======
 # 组内决策规划代码--rosbag to nuplan流程
 ## 一、相关文件
 ```shell
 # 数据处理文件
 xiaoba_rosbag_tonuplan.py
+>>>>>>> b79de0066777039629f5650da42db17d77030aae
 
 # 训练
 train_predictor-plantf-1211.py

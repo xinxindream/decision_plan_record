@@ -1,0 +1,13 @@
+# conda environments:
+#
+decision-transformer-atari     /home/user/.conda/envs/decision-transformer-atari
+mars-nerf                /home/user/.conda/envs/mars-nerf
+monoflex                 /home/user/.conda/envs/monoflex
+py38gpu                  /home/user/.conda/envs/py38gpu
+py38lr                   /home/user/.conda/envs/py38lr
+base                     /home/user/anaconda3
+bevheight                /home/user/anaconda3/envs/bevheight
+mmdetectionV3.1.0        /home/user/anaconda3/envs/mmdetectionV3.1.0
+nuplan                   /home/user/anaconda3/envs/nuplan
+
+conda 22.9.0

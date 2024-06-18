@@ -1,0 +1,49 @@
+/data/dataset
+
+python nuplan/planning/script/run_simulation.py +simulation=open_loop_boxes planner=simple_planner
+
+python nuplan/planning/script/run_nuboard.py
+
+~/workspace/wcj/GameFormer-Planner-xc-2/nuplan-devkit/nuplan/planning/script/run_simulation.py +simulation=open_loop_boxes planner=simple_planner
+
+
+/data/datasets/nuplan/
+/data/datasets/nuplan/splits/mini
+/data/datasets/nuplan/maps
+
+启动nuboard
+[simulation]
+python nuplan/planning/script/run_simulation.py
++simulation=open_loop_boxes
+planner=simple_planner
+scenario_builder=nuplan_mini
+scenario_filter=all_scenarios
+scenario_filter.scenario_types="[near_multiple_vehicles, on_pickup_dropoff, starting_unprotected_cross_turn, high_magnitude_jerk]"
+scenario_filter.num_scenarios_per_type=10 \
+
+[nuboard]
+path1="output/exp/simulation_open_loop_boxes/2022.11.22.18.43.56"
+python nuplan/planning/script/run_nuboard.py simulation_path="[$path1]"
+
+https://github.com/xinxindream/decision_plan_record.git
+
+
+--name
+"Exp2"
+--train_set
+/data/datasets/xiaoba/2024.1.11/2024-01-11-17-20-37_part1_with_det_2_train/train
+--valid_set
+/data/datasets/xiaoba/2024.1.11/2024-01-11-17-20-37_part1_with_det_2_train/valid
+
+
+--name
+"Exp3"
+--train_set
+/data/datasets/nuplan/processed_data-mini/train
+--valid_set
+/data/datasets/xiaoba/2024.1.11/2024-01-11-17-20-37_part1_with_det_2_train/valid
+
+
+
+
+https://rospypi.github.io/simple/
